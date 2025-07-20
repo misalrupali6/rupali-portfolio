@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rupali Misal - Full Stack Developer</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fefefe; color: #333; }
+    header { background: #4a90e2; color: #fff; padding: 20px; text-align: center; position: relative; }
+    nav { display: flex; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
+    nav a { color: #fff; text-decoration: none; padding: 8px 15px; display: block; }
+    nav a:hover { background: #357ab7; border-radius: 4px; }
+
+    .menu-toggle { display: none; position: absolute; right: 20px; top: 20px; background: #357ab7; border: none; color: white; padding: 10px; font-size: 18px; cursor: pointer; }
+    .menu { display: flex; flex-wrap: wrap; justify-content: center; }
+
+    section { padding: 20px; max-width: 1000px; margin: auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border-radius: 8px; margin-bottom: 20px; }
+    h2 { color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+    ul { padding-left: 20px; }
+    a { color: #2a7ae2; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; padding: 15px; background: #f1f1f1; font-size: 14px; color: #555; }
+
+    @media (max-width: 768px) {
+      .menu { display: none; flex-direction: column; background: #4a90e2; }
+      .menu.show { display: flex; }
+      nav a { padding: 10px; border-top: 1px solid rgba(255,255,255,0.2); }
+      .menu-toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rupali Sampat Misal</h1>
+    <p>Full Stack .NET Developer | Angular | SQL Server | Azure Certified</p>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="menu" id="menu">
+      <a href="#contact">Contact</a>
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#publications">Publications</a>
+    </nav>
+  </header>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> misalrupali6@gmail.com</p>
+    <p><strong>Phone:</strong> +91-9420800316</p>
+    <p><strong>Location:</strong> Pune, Maharashtra</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/misal-rupali">linkedin.com/in/misal-rupali</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/misalrupali6">github.com/misalrupali6</a></p>
+  </section>
+
+  <section id="summary">
+    <h2>Professional Summary</h2>
+    <p>Full Stack Developer with 3+ years of experience in .NET Core, Angular, SQL Server, RESTful APIs, JWT Authentication, CI/CD, and Agile practices. Worked in Healthcare and Finance domains. Known for clean coding, strong backend development, and modular UI design.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>C#, .NET Core 6, ASP.NET MVC 5, Entity Framework</li>
+      <li>Angular 14+, TypeScript, HTML5, CSS3, JavaScript, Bootstrap, jQuery</li>
+      <li>SQL Server 2019, MySQL, Stored Procedures, Indexing</li>
+      <li>REST API, JWT Authentication</li>
+      <li>Git, GitHub, GitLab, Azure DevOps, Postman</li>
+      <li>Crystal Reports, Telerik</li>
+      <li>Agile/Scrum, SDLC, Documentation</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Key Projects</h2>
+    <ul>
+      <li><strong>Medimaze Diagnostic Platform:</strong> Used across 100+ labs, JWT-secured APIs, modular Angular UI, backend optimization reduced load by 40%.</li>
+      <li><strong>Close the Care (Nuqare):</strong> Healthcare platform with Angular & ASP.NET MVC, improved appointment coordination, REST API development.</li>
+      <li><strong>Smart Billing System (Virtuoso):</strong> Automated finance module, RazorPay integration, Crystal Reports for revenue tracking.</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Medimaze Software Solutions:</strong> Jr. Software Developer (Sep 2023 – Present)</li>
+      <li><strong>Nuqare:</strong> Software Developer (Feb 2023 – Aug 2023)</li>
+      <li><strong>Virtuoso Info-Tech:</strong> Software Engineer (Jul 2022 – Jan 2023)</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>PG-DAC – CDAC (2022)</li>
+      <li>M.E. in VLSI – Pune University (2017)</li>
+      <li>B.E. in E&TC – Pune University (2015)</li>
+      <li>MBA (Finance) – Pune University (2019)</li>
+      <li>D. Pharmacy – 2021</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Microsoft Certified: Azure Fundamentals – 2024</li>
+      <li>Scrum Master – Udemy 2024</li>
+      <li>Angular Fundamentals – Udemy 2023</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>Disease Detection – IEEE</li>
+      <li>Dengue Detection – IETE</li>
+      <li>Malaria Detection – Academic Conference</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Rupali Misal. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>
